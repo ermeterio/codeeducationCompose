@@ -7,8 +7,6 @@ const config = {
     password: 'root',
     database:'nodedb'
 };
-
-
 const mysql = require('mysql2')
 app.get('/', (req,res) => {
   var connection = mysql.createConnection(config)
